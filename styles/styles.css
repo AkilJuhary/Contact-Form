@@ -84,8 +84,3 @@ footer {
     background-color: #fda831;
 }
 
-@media only screen (min-width: 200px) {
-    .form1 {
-        width: 100%;
-    }
-}
