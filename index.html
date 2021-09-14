@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Contact form">
+    <meta name="keywords" content="Form, Contact form, Simple form">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+
+    <!-- Title Bar Icon -->
+    <link rel = "icon" href="/images/OIP.jpg" type="image/x-icon">
+
+    <title>Contact Form Validation</title>
+    
+</head>
+<body>
+    <div class="container" id=home>
+        <link rel="icon" type="image" href="/images/OIP.jpg">
+        <h1 class="heading">BASIC CONTACT FORM</h1>
+    </div>
+    <div class="textbox1">
+        <p class="para1">Simple form created using HTML & CSS</p>
+
+        <p class="para2">Become friends with me on Faceboook - <a href="https://www.facebook.com/Akil.Juhary" target="_blank">Visit Account!</a></p>
+    </div>
+
+    <!-- Contact Form -->
+    <form action="details.php" method="post" class="form1" id="myform">
+        <div class="inputs">
+            <label>Name : </label>
+            <input type="text" name="name" id="firstName" placeholder="Enter your name">
+        </div>
+        <div class="inputs">
+            <label>Email : </label>
+            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+        </div>
+        <div class="inputs">
+            <label>Comments : </label>
+            <textarea name="comments"></textarea>
+        </div>
+        <div class="inputs">
+            <label>Gender : </label>
+            <select name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="Novalue">Prefer not to say</option>
+            </select>
+        </div>
+        <div class="inputs">
+            <label> Age : </label>
+            <input type="number" name="age" value="19">
+        </div>
+        <div class="inputs">
+            <label> Birthdate : </label>
+            <input type="date" name="birthday">
+        </div>
+        <input class="submit" type="submit" name="submit" value="SUBMIT" click="Showmsg()">
+    </form>
+
+    <footer>
+        <p>Copyright&copy; 2021, Contact Form</p>
+    </footer>
+    
+  
+    
+
+
+    <!-- Javascript -->
+    <script type="text/Javascript" src="/scripts/script.js"></script>
+</body>
+</html>
