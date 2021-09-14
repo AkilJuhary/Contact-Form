@@ -1,0 +1,1 @@
+const displayAge = document.getElementsByClassName('dob');
