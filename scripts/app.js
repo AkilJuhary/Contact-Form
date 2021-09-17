@@ -1,9 +1,12 @@
-const displayAge = document.getElementsByClassName("dob");
-const autoAge = document.getElementsByClassName("autoAge");
+// Auto generating age from date of birth
+function autoAge() {
+    var now = new Date();             
+    var currentYear = now.getFullYear();
 
-function showAge() {
-    const currentAge = dob - new Date().getFullYear();
-    document.autoAge.currentAge;
+    var birthYear = document.getElementById("dob").value;
+    var getdob = new Date(birthYear);
+    var getYear = getdob.getFullYear();
+    var ageYear = currentYear - getYear;
+    document.getElementById("showAge").value = `${ageYear}`;
 };
 
-console.log(showAge());

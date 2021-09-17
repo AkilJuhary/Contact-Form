@@ -32,14 +32,14 @@
     </div>
 
     <!-- Contact Form -->
-    <form action="details.php" method="post" class="form1" id="myform">
+    <form method="get"  class="form1" id="myform">
         <div class="inputs">
             <label>Name : </label>
-            <input type="text" name="name" id="firstName" placeholder="Enter your name">
+            <input type="text" name="name" id="firstName" placeholder="Enter your name" required>
         </div>
         <div class="inputs">
             <label>Email : </label>
-            <input type="email" name="email" id="email" placeholder="example@gmail.com">
+            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
         </div>
         <div class="inputs">
             <label>Comments : </label>
@@ -55,23 +55,18 @@
         </div>
         <div class="inputs">
             <label> Birthdate : </label>
-            <input type="date" name="birthday" class="dob">
+            <input type="date" name="birthday" id="dob" onchange="autoAge()">
         </div>
         <div class="inputs">
             <label> Age : </label>
-            <input type="number" name="age" class="autoAge">
+            <input type="text" name="age" id="showAge">
         </div>
-        
-        <input class="submit" type="submit" name="submit" value="SUBMIT" click="Showmsg()">
+        <input class="submit" type="submit" name="submit" value="SUBMIT">
     </form>
 
     <footer>
         <p>Copyright&copy; 2021, Contact Form</p>
     </footer>
-    
-  
-    
-
 
     <!-- Javascript -->
     <script type="text/Javascript" src="scripts/app.js"></script>
